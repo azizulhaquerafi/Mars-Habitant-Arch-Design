@@ -26,12 +26,10 @@ By varying the inputs and spatial orientations, this uniform equation is mapped 
 ### A. Side Wall Layer (Lateral Inward Constriction Profile)
 The side wall curves inward to form a compression-dominant arch. The equation uses the elevation $Z$ as an input relative to the wall's mid-height axis:
 
-$$\text{wall\_inward\_profile}(Z) = b\_w \cdot \left(1 - \frac{4 \cdot \left(Z - \frac{h\_w}{2}\right)^2}{h\_w^2}\right)$$
-
+$$\text{wall\ inward\ profile}(Z) = b_w \cdot \left(1 - \frac{4 \cdot \left(Z - \frac{h_w}{2}\right)^2}{h_w^2}\right)$$
 This offset is subtracted from the outer baseline boundary radius to pull the circular shell inward symmetrically:
 
-$$R\_{\text{wall}}(Z) = \frac{b\_r}{2} - \text{wall\_inward\_profile}(Z)$$
-
+$$R_{\text{wall}}(Z) = \frac{b_r}{2} - \text{wall\ inward\ profile}(Z)$$
 ### B. Roof Layer (Suspended Parabolic Profile)
 The shallow roof operates under tension to contain internal pressure. It uses the horizontal radial distance $R$ from the absolute center axis to calculate the suspended elevation curve:
 
